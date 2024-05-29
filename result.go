@@ -2,10 +2,11 @@ package convertapi
 
 import (
 	"encoding/json"
-	"github.com/ConvertAPI/convertapi-go/lib"
 	"net/http"
 	"net/url"
 	"os"
+
+	"github.com/timr11/convertapi-go/lib"
 )
 
 type Result struct {

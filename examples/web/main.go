@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/ConvertAPI/convertapi-go"
-	"github.com/ConvertAPI/convertapi-go/config"
-	"github.com/ConvertAPI/convertapi-go/param"
+	"github.com/timr11/convertapi-go"
+	"github.com/timr11/convertapi-go/config"
+	"github.com/timr11/convertapi-go/param"
 	"os"
 )
 

@@ -1,6 +1,6 @@
 # ConvertAPI Go Client
 
-![example workflow](https://github.com/ConvertAPI/convertapi-go/actions/workflows/tests.yml/badge.svg)
+![example workflow](https://github.com/timr11/convertapi-go/actions/workflows/tests.yml/badge.svg)
 
 ## Convert your files with our online file conversion API
 
@@ -14,7 +14,7 @@ You can get your free API secret at https://www.convertapi.com/a
 Execute this command in your GOPATH:
 
 ```shell
-go get github.com/ConvertAPI/convertapi-go
+go get github.com/timr11/convertapi-go
 ```
 
 ## Usage
@@ -26,7 +26,9 @@ You can get your secret at https://www.convertapi.com/a
 ```go
 config.Default.Secret = "your-api-secret"
 ```
+
 or
+
 ```go
 config.Default.Token = "your-token"
 config.Default.ApiKey = "your-api-key"
@@ -64,7 +66,7 @@ cost, err := res.Cost()
 #### Convert remote file
 
 ```go
-pptxRes := convertapi.ConvDef("pptx", "pdf", 
+pptxRes := convertapi.ConvDef("pptx", "pdf",
     param.NewString("file", "https://cdn.convertapi.com/cara/testfiles/presentation.pptx"),
 )
 ```
@@ -94,12 +96,12 @@ secondsLeft := user.SecondsLeft
 
 ### Alternative domain
 
-How to set an alternative domain can be found in the [advanced example](https://github.com/ConvertAPI/convertapi-go/blob/master/examples/advanced/main.go).
+How to set an alternative domain can be found in the [advanced example](https://github.com/timr11/convertapi-go/blob/master/examples/advanced/main.go).
 Dedicated to the region [domain list](https://www.convertapi.com/doc/servers-location).
 
 ### More examples
 
-Find more advanced examples in the [examples](https://github.com/ConvertAPI/convertapi-go/tree/master/examples) folder.
+Find more advanced examples in the [examples](https://github.com/timr11/convertapi-go/tree/master/examples) folder.
 
 #### Converting your first file, full example:
 
@@ -109,7 +111,7 @@ ConvertAPI is designed to make converting file super easy. The following snippet
 package main
 
 import (
-	"github.com/ConvertAPI/convertapi-go"
+	"github.com/timr11/convertapi-go"
 	"fmt"
 	"os"
 )
@@ -129,8 +131,10 @@ This is the bare-minimum to convert a file using the ConvertAPI client, but you 
 Take special note that you should replace `your-api-secret` with the secret you obtained in item two of the pre-requisites.
 
 ### Issues &amp; Comments
+
 Please leave all comments, bugs, requests, and issues on the Issues page. We'll respond to your request ASAP!
 
 ### License
-The ConvertAPI Go Library is licensed under the [MIT](http://www.opensource.org/licenses/mit-license.php "Read more about the MIT license form") license.
-Refer to the [LICENSE](https://github.com/ConvertAPI/convertapi-go/blob/master/LICENSE) file for more information.
+
+The ConvertAPI Go Library is licensed under the [MIT](http://www.opensource.org/licenses/mit-license.php 'Read more about the MIT license form') license.
+Refer to the [LICENSE](https://github.com/timr11/convertapi-go/blob/master/LICENSE) file for more information.

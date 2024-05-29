@@ -1,7 +1,7 @@
 package param
 
 import (
-	"github.com/ConvertAPI/convertapi-go/config"
+	"github.com/timr11/convertapi-go/config"
 )
 
 type ParamResultIdx struct {
